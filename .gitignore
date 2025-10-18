@@ -1,0 +1,31 @@
+# Ignore data files
+data/*.csv
+data/*.xlsx
+
+# Ignore Python cache and virtual environments
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Ignore environment and configuration files
+.env
+*.env
+*.ini
+*.yaml
+
+# Ignore database files and logs
+*.db
+*.sqlite
+*.log
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore compiled artifacts
+*.egg-info/
+build/
+dist/
