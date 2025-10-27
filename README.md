@@ -68,9 +68,7 @@ PostgreSQL • Python (pandas) • dbt • Airflow • Snowflake • Power BI �
 
 ## Ethical Considerations
 
-This dataset originates from the CMS Hospital Readmissions Reduction Program (HRRP), a policy initiative intended to improve care quality by penalizing hospitals with high readmission rates.  
-While the data offers valuable insight into healthcare performance, it also reflects systemic inequities — hospitals serving low-income, aging, or chronically ill populations are disproportionately affected.  
-This project focuses on technical data engineering and analysis, not on endorsing policy outcomes.
+This dataset originates from the CMS Hospital Readmissions Reduction Program (HRRP), a policy initiative intended to improve care quality by penalizing hospitals with high readmission rates. While the data offers valuable insight into healthcare performance, the initiative behind the dataset reflects systemic inequities — hospitals serving low-income, aging, or chronically ill populations could be disproportionately affected. This project therefore focuses on technical data engineering and analysis, not on endorsing policy outcomes.
 
 ---
 
