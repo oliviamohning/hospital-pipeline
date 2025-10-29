@@ -1,6 +1,5 @@
 -- Step 1: Create raw staging table
 -- Mirrors the CSV structure for initial ingestion.
-
 CREATE TABLE readmissions (
     facility_name TEXT,
     facility_id TEXT,
@@ -19,7 +18,6 @@ CREATE TABLE readmissions (
 
 -- Step 2: Examine raw data for non-numeric or irregular values
 -- Identifies invalid entries like "N/A" or "Too Few to Report" before casting.
-
 SELECT DISTINCT num_discharges
 FROM readmissions
 WHERE num_discharges !~ '^[0-9]+$'
@@ -38,7 +36,6 @@ ORDER BY num_readmissions;
 
 -- Step 3: Create cleaned and typed table
 -- Replaces invalid text values with NULL and casts columns to numeric and date types.
-
 CREATE TABLE readmissions_clean AS
 SELECT
     facility_name,
@@ -58,7 +55,6 @@ FROM readmissions;
 
 -- Step 4: Verify cleaned table schema
 -- Confirms column data types are correctly assigned.
-
 SELECT column_name, data_type
 FROM information_schema.columns
 WHERE table_name = 'readmissions_clean'
